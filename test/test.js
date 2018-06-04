@@ -23,9 +23,9 @@ describe(`React component inject`, () => {
 		let text = await page.$eval(`a`, e => e.textContent)
 		expect(text.trim()).toEqual(`Share link`)
 	})
-	it(`Should behave a link`, async () => {
+	it(`Should have a link`, async () => {
 		let href = await page.$eval(`a`, e => e.href)
-		expect(href).toEqual(`https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.google.com%2F`)
+		expect(href).toEqual(`https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.google.com%2F&title=&summary=&source=`)
 	})
 	afterAll(async () => {
 		server.stop()
