@@ -1,31 +1,31 @@
-# react-facebook-share-link
+# react-linkedin-link
 
-Create "share this on Facebook" links in React.
+Create "share this on Linkedin" links in React.
 
 ## Installation
 
 With npm:
 
 ```bash
-npm install --save react-facebook-share-link
+npm install --save react-linkedin-share-link
 ```
 
 Or with Yarn:
 
 ```bash
-yarn add react-facebook-share-link
+yarn add react-linkedin-share-link
 ```
 
 ## Usage
 
 ```jsx
-import ShareLink from 'react-facebook-share-link'
+import ShareLink from 'react-linkedin-share-link'
 
 ...
 
 <ShareLink link='https://your-site.com/some-page'>
    {link => (
-      <a href={link} target='_blank'>Share this on Facebook</a>
+      <a href={link} target='_blank'>Share this on Linkedin</a>
    )}
 </ShareLink>
 ```
