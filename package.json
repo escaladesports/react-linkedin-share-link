@@ -15,13 +15,13 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "esca-scripts build",
+    "build": "esca-scripts build --no-styled-jsx",
     "dev": "esca-scripts dev",
     "prepublishOnly": "npm run build",
     "reset": "esca-scripts reset",
     "serve": "esca-scripts serve --src dist-test",
     "test": "npm run build && npm run test:bundle && npm run test:run",
-    "test:bundle": "esca-scripts bundle --src test/wrapper/index.html --dist dist-test",
+    "test:bundle": "esca-scripts bundle --src test/wrapper/index.html --dist dist-test --no-styled-jsx",
     "test:run": "esca-scripts test",
     "test:serve": "npm run build && npm run test:bundle && esca-scripts serve --src dist-test",
     "travis": "opn https://travis-ci.org/escaladesports/react-linkedin-share-link/branches"
