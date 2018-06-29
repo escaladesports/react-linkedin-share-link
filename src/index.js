@@ -14,11 +14,9 @@ class LinkedinShare extends React.Component {
 			})
 		}
 	}
-	componentDidReceiveProps() {
-		if (this.props.link) {
-			this.setState({
-				link: this.props.link
-			})
+	componentWillReceiveProps({ link }) {
+		if (link) {
+			this.setState({ link })
 		}
 	}
 	render() {
